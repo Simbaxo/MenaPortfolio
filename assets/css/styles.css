@@ -157,3 +157,27 @@ p {
   margin-top: 0;
   margin-bottom: 25px;
 }
+
+/* SKILLS STYLES */
+
+.skills {
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 170px;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.item {
+  margin: 3px 0;
+  font-size: .9rem;
+}
