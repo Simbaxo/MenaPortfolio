@@ -128,3 +128,32 @@ header nav li {
 }
 
 /* ABOUT STYLES */
+
+.about {
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 170px;
+}
+
+.title {
+  color: #e60000;
+  flex-shrink: 0;
+  width: 200px;
+  margin-right: 70px;
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.content {
+  width: 100%;
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 650px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
