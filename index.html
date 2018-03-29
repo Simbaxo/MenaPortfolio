@@ -12,14 +12,15 @@
 </head>
 
 <body>
-  <header>
-    <h2><a href="#">AM</a></h2>
+  <header class="sticky">
+    <h2 class="logo"><a href="#">AM</a></h2>
     <nav>
       <li><a href="#At">About</a></li>
       <li><a href="#Sk">Skills</a></li>
       <li><a href="#Pt">Projects</a></li>
       <li><a href="#">Contact</a></li>
     </nav>
+    <button class="toggle-menu" aria-label="Responsive Navigation Menu">☰</button>
   </header>
 
   <section class="hero">
@@ -31,66 +32,67 @@
       <a href="#">Let's Build Together</a>
     </div>
   </section>
+
+  <section class="about" id="At">
+    <div class="title">Background</div>
+    <div class="content">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos mollitia harum natus itaque eligendi quos
+        deserunt illum, quasi nemo dolorem libero facilis id saepe possimus corporis laborum dolorum voluptatum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos mollitia harum natus itaque eligendi quos
+        deserunt illum, quasi nemo dolorem libero facilis id saepe possimus corporis laborum dolorum voluptatum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos mollitia harum natus itaque eligendi quos
+        deserunt illum, quasi nemo dolorem libero facilis id saepe possimus corporis laborum dolorum voluptatum.</p>
+    </div>
+  </section>
+
+  <section class="skills" id="Sk">
+    <div class="title">Skills</div>
+    <div class="content">
+      <div class="skills-box">
+        <div class="skills-category">
+          <div class="skills-label">Languages</div>
+          <ul>
+            <li class="item">JavaScript</li>
+            <li class="item">HTML</li>
+            <li class="item">CSS/Sass</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <div class="skills-label">Frameworks</div>
+          <ul>
+            <li class="item">Node</li>
+            <li class="item">React</li>
+            <li class="item">Flexbox</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <div class="skills-label">Tools</div>
+          <ul>
+            <li class="item">Git & Github</li>
+            <li class="item">MongoDB</li>
+            <li class="item">Redux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="Pt">
+    <div class="title">Featured Projects</div>
+    <div class="content">
+      <div class="yelpcamp">
+        <figure>
+          <a href="https://yelpcampv2.herokuapp.com/" target="_blank"><img src="assets/img/YelpCamp.png" alt=""></a>
+        </figure>
+        <figcaption>
+          <div class="pt-title">YelpCamp</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illo doloribus, ea at cumque rerum impedit.
+            Quia dolores quae autem inventore exercitationem est neque maiores asperiores hic id. Facilis, earum!</p>
+        </figcaption>
+      </div>
+    </div>
+  </section>
 </body>
-
-<section class="about" id="At">
-  <div class="title">Background</div>
-  <div class="content">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos mollitia harum natus itaque eligendi quos deserunt
-      illum, quasi nemo dolorem libero facilis id saepe possimus corporis laborum dolorum voluptatum.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos mollitia harum natus itaque eligendi quos deserunt
-      illum, quasi nemo dolorem libero facilis id saepe possimus corporis laborum dolorum voluptatum.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eos mollitia harum natus itaque eligendi quos deserunt
-      illum, quasi nemo dolorem libero facilis id saepe possimus corporis laborum dolorum voluptatum.</p>
-  </div>
-</section>
-
-<section class="skills" id="Sk">
-  <div class="title">Skills</div>
-  <div class="content">
-    <div class="skills-box">
-      <div class="skills-category">
-        <div class="skills-label">Languages</div>
-        <ul>
-          <li class="item">JavaScript</li>
-          <li class="item">HTML</li>
-          <li class="item">CSS/Sass</li>
-        </ul>
-      </div>
-      <div class="skills-category">
-        <div class="skills-label">Frameworks</div>
-        <ul>
-          <li class="item">Node</li>
-          <li class="item">React</li>
-          <li class="item">Flexbox</li>
-        </ul>
-      </div>
-      <div class="skills-category">
-        <div class="skills-label">Tools</div>
-        <ul>
-          <li class="item">Git & Github</li>
-          <li class="item">MongoDB</li>
-          <li class="item">Redux</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="projects" id="Pt">
-  <div class="title">Featured Projects</div>
-  <div class="content">
-    <div class="yelpcamp">
-      <figure>
-        <a href="http://mena-yelpcamp.herokuapp.com/" target="_blank"><img src="assets/img/YelpCamp.png" alt=""></a>
-      </figure>
-      <figcaption>
-        <div>YelpCamp</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illo doloribus, ea at cumque rerum impedit. Quia
-          dolores quae autem inventore exercitationem est neque maiores asperiores hic id. Facilis, earum!</p>
-      </figcaption>
-    </div>
-  </div>
-</section>
+<script src="assets/js/main.js"></script>
 
 </html>

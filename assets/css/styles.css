@@ -20,18 +20,10 @@ a {
   text-decoration: none;
   opacity: 0.75;
   color: #fff;
+  ;
 }
 
 a:hover {
-  opacity: 1;
-}
-
-a.btn {
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  background-color: #3f51b5;
   opacity: 1;
 }
 
@@ -46,10 +38,84 @@ section:not(.hero):nth-child(even) {
   background-color: #f5f5f5;
 }
 
+@media (max-width: 800px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
+/* HEADER SCROLL */
+
+.logo a {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 10px;
+  background: #f1c40f;
+  color: #111;
+  transform: all .2s;
+}
+
+.logo a:hover {
+  border-bottom: none;
+}
+
+.toggle-menu {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  margin: 10px 10px 0 0;
+  transition: margin .2s;
+}
+
+.scroll {
+  background: rgba(255, 255, 255, .9);
+}
+
+.scroll .logo {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.scroll nav a {
+  align-items: center;
+  color: #111;
+}
+
+.scroll nav a:active {
+  border-bottom: 4px solid #e60000;
+}
+
+.scroll .logo,
+.scroll ul,
+.scroll .toggle-menu {
+  margin: 0;
+}
+
+@media screen and (max-width: 1060px) {
+  header {
+    padding: 10px;
+  }
+  nav {
+    align-items: center;
+  }
+  ul {
+    display: none;
+  }
+  .logo {
+    font-size: 1.8rem;
+    margin: 10px 0 0 10px;
+  }
+  .toggle-menu {
+    display: block;
+  }
+}
+
 /* HEADER STYLES */
 
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -58,6 +124,8 @@ header {
   animation: 1s fadein 0.5s forwards;
   opacity: 0;
   z-index: 1;
+  top: 0;
+  background: transparent;
 }
 
 @keyframes fadein {
@@ -82,6 +150,16 @@ header nav {
 
 header nav li {
   margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+  }
+  header h2 {
+    margin-bottom: 15px;
+  }
 }
 
 /* HERO STYLES */
@@ -129,6 +207,21 @@ header nav li {
   100% {
     opacity: 1;
     margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    min-height: 600px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero h3 {
+    font-size: 24px;
+  }
+  .hero a.btn {
+    padding: 15px 40px;
   }
 }
 
@@ -212,4 +305,11 @@ figcaption p {
   width: 125px;
   flex-shrink: 0;
   margin-left: 30px;
+}
+
+.pt-title {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }
