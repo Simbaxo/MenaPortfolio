@@ -69,6 +69,10 @@ section:not(.hero):nth-child(even) {
   transition: margin .2s;
 }
 
+.nav-item.active {
+  border-bottom: 4px solid #e60000;
+}
+
 .scroll {
   background: rgba(255, 255, 255, .9);
 }

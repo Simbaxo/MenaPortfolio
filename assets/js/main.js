@@ -28,3 +28,6 @@ window.onload = function() {
 window.onresize = function() {
   setTopPadding();
 };
+
+let navItems = document.querySelector(".nav-item");
+
